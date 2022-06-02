@@ -1,5 +1,5 @@
 Please follow the below steps for lab exercises:
-###### First step - Build docker image by executing below command #####
+#### First step - Build docker image by executing below command #####
 sudo docker build . -t your_docker_user_id/myphythonapp
 (note - change the above your_docker_user_id to userid you had created in cloud.docker.com)
 sudo docker images
