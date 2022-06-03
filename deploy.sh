@@ -20,8 +20,14 @@ function deploy()
 {
  case ${NAMESPACE} in
        dev-httpd|test-httpd|prod-httpd)
+<<<<<<< HEAD
 	       helm upgrade --install --values ${VALUE_FILE} $CHARTNAME ./mychart \
 		   --namespace ${NAMESPACE} --set image.tag=${IMAGE_TAG}
+=======
+	       helm upgrade --install --values ${VALUE_FILE} $CHARTNAME $CHARTNAME ./mychart \
+		   --namespace ${NAMESPACE} \ 
+		   --set image.tag=${IMAGE_TAG}
+>>>>>>> fac10e06f25ad17bbfb0966d1e95be4bf7a909a6
 		;;
  esac
  }
