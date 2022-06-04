@@ -22,7 +22,7 @@ function deploy()
        dev-httpd|test-httpd|prod-httpd)
 	       helm upgrade --install --values ${VALUE_FILE} $CHARTNAME ./mychart \
 		   --namespace ${NAMESPACE} 
-		   # --set image.tag=${IMAGE_TAG}
+		   --set image.tag=${IMAGE_TAG}
 		;;
  esac
  }
