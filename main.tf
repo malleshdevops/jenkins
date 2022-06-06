@@ -11,7 +11,8 @@ terraform {
 # provider block
 provider "aws" {
   region     = "ap-south-1"
-  profile = "default" # $HOME/.aws/credentials
+  access_key = "AKIAQ7BM2OFUINJW6FVW"
+  secret_key = "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"
 }
 
 
