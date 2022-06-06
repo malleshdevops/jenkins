@@ -95,7 +95,6 @@ resource "aws_security_group" "my-ssh" {
 resource "aws_instance" "myec2-test" {
   ami           = "ami-079b5e5b3971bd10d"
   instance_type = "t2.micro"
-  user_data = file("${path.module}/install.sh")
   key_name = "aws-devops4"
   vpc_security_group_ids = [ aws_security_group.my-testing.id,aws_security_group.my-testing-1.id,aws_security_group.my-ssh.id ]
 
