@@ -6,7 +6,8 @@ set -e
 function help()
 {
   echo '''
-    usage: bash deploy.sh <Namespace> <IMAGE_TAG>
+    usage: bash deploy.sh <Namespace> <IMAGE_TAG> 
+           bash deploy.sh test 1.0.9
 	'''
 }
 
