@@ -1,5 +1,4 @@
 #!/bin/bash
-# set -x
 CDIR=$(cd `dirname "$0"` && pwd)
 cd "$CDIR"
 set -e
